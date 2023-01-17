@@ -1,43 +1,43 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Isabelle Hu",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "picture": "https://github.com/IGraceH.png",
+    "email": "ighu@hawaii.edu",
+    "phone": "669-251-7771",
+    "website": "https://IGraceH.github.io",
+    "summary": "I am majoring in Computer Science at University of Hawai'i at Manoa. I plan to graduate in Spring 2025.",
+    "location": { "address": "", "postalCode": "96701", "city": "Aiea", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "IGraceHu", "url": "https://github.com/IGraceH" },
+      { "network": "linkedin", "username": "isabellehu", "url": "http://linkedin.com/in/isabellehu06" },
+      /*{ "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
+      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }*/
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Web and App Development" },
+    { "name": "Cloud Services" },
+    { "name": "Game Development" },
+    { "name": "Graphic Design" },
+    { "name": "Digital Illustration" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "HTML & CSS" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", "Git/GitHub" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "institution": "University of Hawaii at Manoa, Honolulu, HI",
+      "area": "Computer Science (expected Spring, 2025)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2021-08",
       "endDate": "Present",
       "courses": [
       ]
@@ -45,30 +45,17 @@
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "eWorld Enterprise Solutions",
+      "position": "Intern Developer",
       "website": "",
-      "startDate": "2015-08-01",
+      "startDate": "2021-07",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Software intern",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Responsible for back-end developement for projects from the Department of Health",
+        "Mentored new BAs and developers on the team"
       ]
-    },
-    {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
-      "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
-      ]
-    }
-  ],
+    }/*,
   "volunteer": [
     {
       "organization": "Center for Renewable Energy and Island Sustainability",
@@ -114,5 +101,5 @@
     {
       "name": "Available upon request"
     }
-  ]
+  ]*/
 }
