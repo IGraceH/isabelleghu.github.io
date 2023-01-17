@@ -1,105 +1,119 @@
 {
-  "basics": {
-    "name": "Isabelle Hu",
-    "label": "Student",
-    "picture": "https://github.com/IGraceH.png",
-    "email": "ighu@hawaii.edu",
-    "phone": "669-251-7771",
-    "website": "https://IGraceH.github.io",
-    "summary": "I am majoring in Computer Science at University of Hawai'i at Manoa. I plan to graduate in Spring 2025.",
-    "location": { "address": "", "postalCode": "96701", "city": "Aiea", "countryCode": "USA", "region": "Hawaii" },
-    "profiles": [
-      { "network": "github", "username": "IGraceHu", "url": "https://github.com/IGraceH" },
-      { "network": "linkedin", "username": "isabellehu", "url": "http://linkedin.com/in/isabellehu06" },
-      /*{ "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }*/
-    ]
-  },
-  "interests": [
-    { "name": "Web and App Development" },
-    { "name": "Cloud Services" },
-    { "name": "Game Development" },
-    { "name": "Graphic Design" },
-    { "name": "Digital Illustration" }
-  ],
-  "skills": [
-    {
-      "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "HTML & CSS" ]
-    },
-    {
-      "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Git/GitHub" ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Hawaii at Manoa, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2025)",
-      "studyType": "B.S.",
-      "startDate": "2021-08",
-      "endDate": "Present",
-      "courses": [
-      ]
-    }
-  ],
-  "work": [
-    {
-      "company": "eWorld Enterprise Solutions",
-      "position": "Intern Developer",
-      "website": "",
-      "startDate": "2021-07",
-      "endDate": "Present",
-      "summary": "Software intern",
-      "highlights": [
-        "Responsible for back-end developement for projects from the Department of Health",
-        "Mentored new BAs and developers on the team"
-      ]
-    }/*,
-  "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request"
-    }
-  ]*/
+	"basics": {
+		"name": "Isabelle Hu",
+		"label": "Student",
+		"picture": "https://github.com/IGraceH.png",
+		"email": "ighu@hawaii.edu",
+		"phone": "669-251-7771",
+		"website": "https://IGraceH.github.io",
+		"summary": "I am majoring in Computer Science at University of Hawai'i at Manoa. I plan to graduate in Spring 2025.",
+		"location": {
+			"address": "",
+			"postalCode": "96701",
+			"city": "Aiea",
+			"countryCode": "USA",
+			"region": "Hawaii"
+		},
+		"profiles": [{
+				"network": "github",
+				"username": "IGraceHu",
+				"url": "https://github.com/IGraceH"
+			},
+			{
+				"network": "linkedin",
+				"username": "isabellehu",
+				"url": "http://linkedin.com/in/isabellehu06"
+			},
+			{
+				"network": "twitter",
+				"username": "",
+				"url": ""
+			},
+			{
+				"network": "instagram",
+				"username": "",
+				"url": ""
+			}
+		]
+	},
+	"interests": [{
+			"name": "Web and App Development"
+		},
+		{
+			"name": "Cloud Services"
+		},
+		{
+			"name": "Game Development"
+		},
+		{
+			"name": "Graphic Design"
+		},
+		{
+			"name": "Digital Illustration"
+		}
+	],
+	"skills": [{
+			"name": "Languages and Frameworks",
+			"keywords": ["C", "C++", "Java", "Javascript", "HTML & CSS"]
+		},
+		{
+			"name": "Toolsets/OS",
+			"keywords": ["MacOS", "Git/GitHub"]
+		}
+	],
+	"education": [{
+		"institution": "University of Hawaii at Manoa, Honolulu, HI",
+		"area": "Computer Science (expected Spring, 2025)",
+		"studyType": "B.S.",
+		"startDate": "2021-08",
+		"endDate": "Present",
+		"courses": []
+	}],
+	"work": [{
+		"company": "eWorld Enterprise Solutions",
+		"position": "Intern Developer",
+		"website": "",
+		"startDate": "2021-07",
+		"endDate": "Present",
+		"summary": "Software intern",
+		"highlights": [
+			"Responsible for back-end developement for projects from the Department of Health",
+			"Mentored new BAs and developers on the team"
+		]
+	}],
+	"volunteer": [{
+			"organization": "",
+			"website": "",
+			"position": "",
+			"startDate": "",
+			"endDate": "",
+			"summary": "",
+			"highlights": [""]
+		},
+		{
+			"organization": "",
+			"website": "",
+			"position": "",
+			"startDate": "",
+			"endDate": "",
+			"summary": "",
+			"highlights": [""]
+		}
+	],
+	"awards": [{
+			"title": "",
+			"date": "",
+			"awarder": "",
+			"summary": ""
+		},
+		{
+			"title": "",
+			"date": "",
+			"awarder": "",
+			"summary": ""
+		}
+	],
+	"references": [{
+		"name": "Available upon request"
+	}]
 }
