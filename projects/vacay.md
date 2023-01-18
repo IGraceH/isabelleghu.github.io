@@ -2,27 +2,18 @@
 layout: project
 type: project
 image: img/vacay/vacay-square.png
-title: "Vacay"
-date: 2015
+title: "DOH IVR"
+date: 2021-2022
 published: true
 labels:
-  - Javascript
-  - Meteor
-  - MongoDB
-  - GitHub
-summary: "A responsive web application for travel planning that my team developed in ICS 415."
+  - JavaScript
+  - Dialogflow
+  - ServiceNow
+summary: "An interactive voice response application developed for the Department of Health in Hawai'i I worked on during my internship at eWorldES"
 ---
 
-<img class="img-fluid" src="../img/vacay/vacay-home-page.png">
+The DOH IVR is an interactive voice response application for the Department of Health of Hawai'i I helped develop during my intership at eWorld Enterprise Solutions. Working on this project helped me learn how to use other popular tools for application development.
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+The DOH IVR was created using Dialogflow, ServiceNow, and Zoom. I mainly worked on the Dialogflow and ServiceNow sides. Dialogflow is a Google Cloud Service, created for the purpose of developing IVRs. ServiceNow also mainly uses JavaScript to define its functions. Over the course of several months, we made changes and deploys according to the Department of Health's needs.
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
-
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
-
-Here is some example code to illustrate Simple Schema use:
-
-{% gist 9defa1fb3f4eb593ba5fa9eacedca960 %}
- 
-Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
+During this project, I became more familiar with ServiceNow and learned how to use Dialogflow. I also had to opportunity to onboard and tutor other new developers and BAs to the team, introducing them to the platforms. 
