@@ -23,16 +23,6 @@
 				"network": "linkedin",
 				"username": "isabellehu",
 				"url": "http://linkedin.com/in/isabellehu06"
-			},
-			{
-				"network": "twitter",
-				"username": "",
-				"url": ""
-			},
-			{
-				"network": "instagram",
-				"username": "",
-				"url": ""
 			}
 		]
 	},
@@ -82,35 +72,25 @@
 		]
 	}],
 	"volunteer": [{
-			"organization": "",
-			"website": "",
-			"position": "",
-			"startDate": "",
-			"endDate": "",
-			"summary": "",
-			"highlights": [""]
+			"organization": "Game Dev Club at UH Manoa",
+			"position": "Asset Artist",
+			"startDate": "2022-09",
+			"endDate": "Ongoing",
+			"summary": "Artist for characters and backgrounds",
+			"highlights": [
+				"Created pixel sprites for characters and settings",
+				"Modeled characters in Maya"
+			]
 		},
 		{
-			"organization": "",
-			"website": "",
-			"position": "",
-			"startDate": "",
-			"endDate": "",
+			"organization": "Ballroon Dance at UH Manoa",
+			"position": "Officer",
+			"startDate": "2022-09",
+			"endDate": "Ongoing",
 			"summary": "",
-			"highlights": [""]
-		}
-	],
-	"awards": [{
-			"title": "",
-			"date": "",
-			"awarder": "",
-			"summary": ""
-		},
-		{
-			"title": "",
-			"date": "",
-			"awarder": "",
-			"summary": ""
+			"highlights": [
+				"Performed at a social dance event hosted by USA Dance Honolulu",
+				"Competed in the Aloha Ball"]
 		}
 	],
 	"references": [{
