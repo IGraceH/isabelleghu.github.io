@@ -10,11 +10,11 @@ labels:
 summary: "I created a simulation of a user database in C++ for ICS 212."
 ---
 
-<div class="text-left p-4">
-  <img width="200px" src="../img/userdatabase/userdatabase-square.png" class="img-thumbnail" >
-</div>
+<img width="300px" src="../img/userdatabase/userdatabase-square.png" class="float-start pe-4" >
 
 When I took ICS 212, we were to create a simulation of a user database using C++, the programming language we were learning at the time. The program could store, edit, find, and list the user information within the database. The information persists after the program is closed using file input/output. The program also included a debug mode that could be accessed from running the function in the command line. 
+
+I learned and practiced the basics of C++ during this project, especially the specifics of how the input and output functions work and how they interact with the buffer.
 
 This is the getaddress function that I wrote. Since addresses can be multi-line, I constructed a function that processes an input after a special character (in this case, ~) is typed in.
 
