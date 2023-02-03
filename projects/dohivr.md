@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/vacay/vacay-square.png
+image: img/dohivr/ivr-square.png
 title: "DOH IVR"
 date: 2022-2023
 published: true
