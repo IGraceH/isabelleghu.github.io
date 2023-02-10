@@ -10,7 +10,7 @@ labels:
   - ESLint
 ---
 
-<img width="300px" src="../img/codingstandards/eslinterrors.png" class="float-start pe-4" >
+<img width="600px" src="../img/codingstandards/eslinterrors.png" class="float-start pe-4" >
 
 While coding standards can be seen as quite trivial in some circles, code without coding standards is complained about by almost every programmer out there. I've heard many a lamentation about how spacing is inconsistent in a file or how hard a program is to read. The absolute worst case was when I found that a stylesheet I had been given was all condensed into one line. With these experiences, I believe that coding standards are very useful and can even help in learning a programming language.
 
@@ -43,4 +43,4 @@ We break the problem of "How do we convert from one temperature to another?" dow
 
 This use of negative space is key to understanding the structure of any kind of programming. Instead of searching for brackets that may be 25 lines above the snippet of code you're interested in, indentation and spacing mark out your position within a program. 
 
-There is much more to discuss about ESLint and coding standards playing a role in learning code, but this is just an example that I enjoy the most about what ESLint enforces. Hey, I'm partial to anything that doesn't wreck my sanity.
+There is much more to discuss about ESLint and coding standards playing a role in learning code, but this is just an example that I enjoy the most about what ESLint enforces. What can I say? I'm partial to anything that doesn't wreck my sanity.
