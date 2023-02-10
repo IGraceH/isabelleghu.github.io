@@ -20,7 +20,7 @@ Many of my classmates have most of their problems with how nitpicky ESLint is wi
 
 One word: Readability.
 
-##                              The Importance of Spacing and Readability
+##          The Importance of Spacing and Readability
 
 I am not a person who is good with large blocks of text, especially with textbooks. There's simply too much in one place! Readability is very important to me and I would enjoy learning something so much more if the content was easy to read. Proper spacing, consistent capitalization, and fitting punctuation!
 
