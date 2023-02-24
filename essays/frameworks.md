@@ -15,7 +15,7 @@ HTML and CSS are a pain to work with. Don't get me wrong, I love working with HT
 
 ## Bootstrap 5
 
-<img width="300px" src="../img/frameworks/bootstrap-icon.png" class="float-start pe-4" >
+<img width="200px" src="../img/frameworks/bootstrap-icon.png" class="float-start pe-4" >
 
 Recently, I've been working with Bootstrap 5, a UI framework that uses pre-styled classes to quickly style elements on a page. It has so many options for spacing, responsiveness, styling, and more. Simply assign a Bootstrap class to an element and voila! You've got some styling.
 
