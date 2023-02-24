@@ -27,7 +27,7 @@ My favorite feature of Bootstrap 5 is the forms. Bootstrap's forms come pre-styl
 
 <figure class="figure float-end ps-4">
   <img width="600px" src="../img/frameworks/etsy.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-  <figcaption class="figure-caption">There's also a class called justify-content-space-between, which is possibly the longest class name I have ever read.</figcaption>
+  <figcaption class="figure-caption"> There's also a class called justify-content-space-between, which is possibly the longest <br> class name I have ever read.</figcaption>
 </figure>
 
 It's not! It's a technique called "work smarter not harder", I'm sure you've heard of it. Many companies use UI frameworks to construct their websites, whether it be a social media site like Facebook, or a shopping center like Etsy. Looking at Etsy a bit more, Etsy is a big website that supports small creators and shops. Its webpage is simple and elegant, displaying dozens of products from different creators. Inspecting its source code reveals the Bootstrap classes used to style the webpage, like justify-content-center. A prime example of a beautifully designed website using UI frameworks.
