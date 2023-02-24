@@ -15,6 +15,8 @@ HTML and CSS are a pain to work with. Don't get me wrong, I love working with HT
 
 ## Bootstrap 5
 
+<img width="300px" src="../img/frameworks/bootstrap-icon.png" class="float-start pe-4" >
+
 Recently, I've been working with Bootstrap 5, a UI framework that uses pre-styled classes to quickly style elements on a page. It has so many options for spacing, responsiveness, styling, and more. Simply assign a Bootstrap class to an element and voila! You've got some styling.
 
 However, learning Bootstrap 5 can be a challenge. There are so many classes to pick from, there are a lot of options to remember. If you're not knowledgeable about what a certain class does, it could cause you a lot of pain trying to figure out why an element has so much padding on one side. That definitely did not happen to me when I first started learning Bootstrap! 
