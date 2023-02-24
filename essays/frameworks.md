@@ -11,8 +11,6 @@ labels:
   - UI Frameworks
 ---
 
-<img width="600px" src="../img/frameworks/etsy.png" class="float-start pe-4" >
-
 HTML and CSS are a pain to work with. Don't get me wrong, I love working with HTML and CSS. It was learning these two languages that piqued my interest in programming in the first place. Something about creating something that was not just text, but with stylization and colors and images with code was fascinating to me. However, I will admit that the amount of effort put into centering an image is frankly, unnecessarily high.
 
 ## Bootstrap 5
@@ -26,6 +24,8 @@ Still, a benefit of using a UI framework such as Bootstrap 5 is that styling and
 My favorite feature of Bootstrap 5 is the forms. Bootstrap's forms come pre-styled, not the little ugly box you see on government websites. Bootstrap input forms are neatly spaced out and slightly rounded for a softer look. Even better, the confirmation buttons and any extra bells and whistles are seamlessly integrated with the input box. It's quick, it's easy, and most of all, it looks nice.
 
 ## Sounds rather lazy?
+
+<img width="600px" src="../img/frameworks/etsy.png" class="float-end pe-4" >
 
 It's not! It's a technique called "work smarter not harder", I'm sure you've heard of it. Many companies use UI frameworks to construct their websites, whether it be a social media site like Facebook, or a shopping center like Etsy. Looking at Etsy a bit more, Etsy is a big website that supports small creators and shops. Its webpage is simple and elegant, displaying dozens of products from different creators. Inspecting its source code reveals the Bootstrap classes used to style the webpage, like justify-content-center. A prime example of a beautifully designed website using UI frameworks.
 
