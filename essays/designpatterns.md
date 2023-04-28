@@ -4,7 +4,7 @@ type: essay
 title: "Patterns of Design"
 # All dates must be YYYY-MM-DD format!
 date: 2023-04-27
-published: false
+published: true
 labels:
   - Design Patterns
   - Bootstrap 5
@@ -16,12 +16,11 @@ In my time designing web applications and just generally existing on the Interne
 These recurring components also allow people to understand websites better for ease of use. After a user learns what a navigation bar is, what it looks like, and how to use it on one website, they can easily apply that knowledge for ease of use on other websites because the navigation bar is a very widespread design pattern and most websites have some form of navigation bar.
 Some have recognized these design patterned and realized that they are staples in websites, so they have made them easy to create. Bootstrap, a osmething soemttghaj, recognized that navigation bars, dropdowns, and forms are very common design patterns so it allows a developer to easily create those components without having to go through coding the styling and functionality for that component to work.
 
+<img src="../img/designpatterns/sidebar-example.gif" class="float-end ps-4" width="500px" />
 #
 In one of my projects Mele Manoa, my team and I used a couple of different design patterns like a navbar, an authentication system, and a user profile. These features are all very common on web application that runs with a database of users. 
 
 My personal favorite however is the sidebar, another common element in webpages. The sidebar that I've implemented in Mele Manoa filters what kind of information you see on the page with a simple list of toggleable buttons. I used Bootstrap for this web application, and while Bootstrap does not have a preset component for the sidebar that I wanted, it did have preset list group, accordions, and toggleable buttons. I needed the accordion function because the list I needed in the sidebar was very long, but was split up into categories. I needed the list group because not every item in the list was in a category. With these three design patterns, I created the component that I wanted. It looks a little something like this.
-
-<img src="../img/designpatterns/sidebar-example.gif" class="float-start" />
 
 ```
 <h4>Filter By</h4>
