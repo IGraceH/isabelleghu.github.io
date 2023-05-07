@@ -4,7 +4,7 @@ type: project
 image: img/userdatabase/userdatabase-square.png
 title: "Simulating a User Database"
 date: 2022
-published: true
+published: false
 labels:
   - C++
 summary: "I created a simulation of a user database in C++ for ICS 212."
