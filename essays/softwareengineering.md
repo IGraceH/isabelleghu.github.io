@@ -4,7 +4,7 @@ type: essay
 title: "4.5/5 Pretty Good Class"
 # All dates must be YYYY-MM-DD format!
 date: 2023-05-10
-published: false
+published: true
 labels:
   - React Bootstrap
   - Design Patterns
