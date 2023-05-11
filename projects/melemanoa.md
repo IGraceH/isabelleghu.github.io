@@ -15,6 +15,9 @@ labels:
 summary: "A web application for the musicians of UH"
 ---
 
+[GitHub Page](https://mele-manoa.github.io/)
+
+
 <figure class="figure float-end ps-4">
   <img width="500px" src="../img/melemanoa/melemanoa-body.png" class="figure-img img-fluid rounded border">
 </figure>
@@ -81,5 +84,3 @@ My favorite part about Mele Manoa is that sidebar in the Discover and Groups pag
   </ListGroup.Item>
 </ListGroup>
 ```
-
-[GitHub Page](https://mele-manoa.github.io/)
