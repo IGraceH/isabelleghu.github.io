@@ -84,3 +84,5 @@ My favorite part about Mele Manoa is that sidebar in the Discover and Groups pag
   </ListGroup.Item>
 </ListGroup>
 ```
+
+Through this project, I have learned much about how to use React Bootstrap when developing web applications. The project also allowed me to utilize Github more and practice working with a team of people. Towards the end, I also experienced working on a time crunch, as homework and projects from other classes increased in difficulty. Fortunately, I had my team members to rely on to accomplish tasks I could not. One of the 'rules' that we agreed on was to let other teammates know when we had trouble with a task that we were assigned. Throughout development, no one was afraid to admit they were having trouble with the task they were working on. Personally, I believe this is an important quality to have within a development team or any team in general. Developing a web application, working with frameworks, and creating a product with a team have all been valuable experiences for me for the future.

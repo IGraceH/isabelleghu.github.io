@@ -3,7 +3,7 @@
 		"name": "Isabelle Hu",
 		"label": "Student",
 		"picture": "https://github.com/IGraceH.png",
-		"email": "ighu@hawaii.edu",
+		"email": "igracehu@gmail.com",
 		"phone": "408-641-1066",
 		"website": "https://IGraceH.github.io",
 		"summary": "I am majoring in Computer Science at University of Hawai'i at Manoa. I plan to graduate in Spring 2025.",
@@ -21,7 +21,7 @@
 			},
 			{
 				"network": "linkedin",
-				"username": "isabellehu",
+				"username": "isabellehu06",
 				"url": "http://linkedin.com/in/isabellehu06"
 			}
 		]
@@ -43,8 +43,12 @@
 		}
 	],
 	"skills": [{
-			"name": "Languages and Frameworks",
+			"name": "Languages",
 			"keywords": ["C", "C++", "Java", "Javascript", "HTML & CSS"]
+		},
+		{
+			"name": "Frameworks",
+			"keywords": ["React", "Bootstrap", "Quasar"]
 		},
 		{
 			"name": "Toolsets/OS",
@@ -57,7 +61,7 @@
 		"studyType": "B.S.",
 		"startDate": "2021-08",
 		"endDate": "Present",
-		"courses": []
+		"courses": ["ICS 314 - Software Engineering I", "ICS 311 - Algorithms"]
 	}],
 	"work": [{
 		"company": "eWorld Enterprise Solutions",
@@ -65,7 +69,7 @@
 		"website": "",
 		"startDate": "2021-07",
 		"endDate": "Present",
-		"summary": "Software intern",
+		"summary": "Software Intern",
 		"highlights": [
 			"Responsible for back-end developement for projects from the Department of Health",
 			"Mentored new BAs and developers on the team"
@@ -79,7 +83,8 @@
 			"summary": "Artist for characters and backgrounds",
 			"highlights": [
 				"Created pixel sprites for characters and settings",
-				"Modeled characters in Maya"
+				"Modeled characters in Maya",
+				"Designed and illustrated characters and backgrounds"
 			]
 		},
 		{
@@ -89,8 +94,9 @@
 			"endDate": "Present",
 			"summary": "",
 			"highlights": [
-				"Performed at a social dance event hosted by USA Dance Honolulu",
-				"Competed in the Aloha Ball"]
+				"Performed at several social dance event hosted by USA Dance Honolulu",
+				"Competed in the Aloha Ball",
+				"Represented the club at multiple school events"]
 		}
 	],
 	"references": [{
