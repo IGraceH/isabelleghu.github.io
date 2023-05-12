@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Patterns of Design | Isabelle Hu | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/IGraceH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Isabelle Hu | Professional Portfolio">
+    <meta property="og:url" content="https://IGraceH.github.io/essays/designpatterns.html">
+    <meta property="og:title" content="Patterns of Design | Isabelle Hu | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/IGraceH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Patterns of Design | Isabelle Hu | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Isabelle Hu</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Patterns of Design</h1>
+  <span class="date">27 Apr 2023</span>
+  <hr>
+  <p>In my time designing web applications and just generally existing on the Internet, I’ve noticed that some design elements tend to recur across websites and reappear when designing websites. Navigation bars, search bars, and user authentication systems are very common components of web applications. Recurring elements like these, reusable concepts, and ideas constitute design patterns. While the method in which the component is implemented does not matter, the design pattern describes how the component looks and acts. For example, navigation bars can be created in different ways, but they all serve the same purpose in similar ways: allow easy navigation between pages of the website using links.</p>
+
+<p>These recurring components also allow people to understand websites better for ease of use. After a user learns what a navigation bar is, what it looks like, and how to use it on one website, they can easily apply that knowledge for ease of use on other websites because the navigation bar is a very widespread design pattern and most websites have some form of navigation bar.
+Some have recognized these design patterns and realized that they are staples in websites, so they have made them easy to create. Bootstrap and React, both web development frameworks, recognized that navigation bars, dropdowns, and forms are very common design patterns so it allows a developer to easily create those components without having to go through coding the styling and functionality for that component to work.</p>
+
+<p><img src="../img/designpatterns/sidebar-example.gif" class="float-end ps-4" width="400px" /></p>
+<h2 id="design-patterns-in-practice">Design Patterns in Practice</h2>
+<p>In one of my projects Mele Manoa, my team and I used a couple of different design patterns like a navigation bar, an authentication system, and a user profile. These features are all very common on web applications that run with a database of users.</p>
+
+<p>My personal favorite however is the sidebar, another common element in webpages. The sidebar that I’ve implemented in Mele Manoa filters what kind of information the user sees on the page with a simple list of toggleable buttons. I used React Bootstrap for this web application, and while React Bootstrap does not have a preset component for the sidebar that I wanted, it did have a preset list group, accordions, and toggleable buttons. I needed the accordion function because the list I needed in the sidebar was very long, but was split up into categories. I needed the list group because not every item in the list was in a category. With these three design patterns, I created the component that I wanted.
+During its development, I also realized that the toggleable buttons that Bootstrap provided were not compatible with React Bootstrap’s List Group. However, the toggleable buttons used a class to indicate their state, so I ditched the toggleable buttons but took the <code class="language-plaintext highlighter-rouge">active</code> class with me to create this sidebar.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h4&gt;Filter By&lt;/h4&gt;
+&lt;ListGroup&gt;
+  &lt;ListGroup.Item className="p-0"&gt;
+    &lt;Accordion defaultActiveKey="0" flush&gt;
+      &lt;Accordion.Item eventKey="0"&gt;
+        &lt;Accordion.Header&gt;Genres&lt;/Accordion.Header&gt;
+        &lt;Accordion.Body className="p-0"&gt;
+          &lt;ListGroup id="genre-group" variant="flush"&gt;
+            {genres.map((genre, key) =&gt; (
+              &lt;ListGroup.Item
+                action
+                key={key}
+                className="active"
+                onClick={() =&gt; { changeGenreState(key); }}
+              &gt;
+                {genre}
+              &lt;/ListGroup.Item&gt;
+            ))}
+          &lt;/ListGroup&gt;
+        &lt;/Accordion.Body&gt;
+      &lt;/Accordion.Item&gt;
+      &lt;Accordion.Item eventKey="1"&gt;
+        &lt;Accordion.Header&gt;Skill Level&lt;/Accordion.Header&gt;
+        &lt;Accordion.Body className="p-0"&gt;
+          &lt;ListGroup id="skill-group" variant="flush"&gt;
+            {skill.map((level, key) =&gt; (
+              &lt;ListGroup.Item
+                action
+                key={key}
+                className="active"
+                onClick={() =&gt; { changeSkillState(key); }}
+              &gt;
+                {level}
+              &lt;/ListGroup.Item&gt;
+            ))}
+          &lt;/ListGroup&gt;
+        &lt;/Accordion.Body&gt;
+      &lt;/Accordion.Item&gt;
+    &lt;/Accordion&gt;
+  &lt;/ListGroup.Item&gt;
+  &lt;ListGroup.Item
+    id="seeking-item"
+    action
+    className="active"
+    onClick={() =&gt; { changeSeekingState(); }}
+  &gt;
+    Seeking Band Member
+  &lt;/ListGroup.Item&gt;
+&lt;/ListGroup&gt;
+</code></pre></div></div>
+<p>Knowing about design patterns ensures that your audience will know how to use your web application because the design patterns are so widespread and common. Many frameworks have also allowed them to be easily implementable and customizable, so what’s not to use?</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

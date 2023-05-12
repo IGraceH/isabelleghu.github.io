@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Coding standards, up to our standards? | Isabelle Hu | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/IGraceH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Isabelle Hu | Professional Portfolio">
+    <meta property="og:url" content="https://IGraceH.github.io/essays/codingstandards.html">
+    <meta property="og:title" content="Coding standards, up to our standards? | Isabelle Hu | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/IGraceH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Coding standards, up to our standards? | Isabelle Hu | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Isabelle Hu</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Coding standards, up to our standards?</h1>
+  <span class="date">09 Feb 2023</span>
+  <hr>
+  <p><img width="600px" src="../img/codingstandards/eslinterrors.png" class="float-start pe-4" /></p>
+
+<p>While coding standards can be seen as quite trivial in some circles, code without coding standards is complained about by almost every programmer out there. I’ve heard many a lamentation about how spacing is inconsistent in a file or how hard a program is to read. The absolute worst case was when I found that a stylesheet I had been given was all condensed into one line. With these experiences, I believe that coding standards are very useful and can even help in learning a programming language.</p>
+
+<p>Recently I’ve started using ESLint for Javascript, and I quite enjoy it. ESLint is a coding standard that catches style errors according to its guidelines. Missing semicolon, incorrect indentation, unused variables, and many more are alerted by ESLint and demands you correct them. Achieving the green checkmark on the top right corner of the IDE was a mandatory deed that often involved tapping the spacebar or delete key repeatedly until the red squiggly lines disappeared.</p>
+
+<p>Many of my classmates have most of their problems with how nitpicky ESLint is with spacing. Spacing has no impact on the overall performance of the program! In some cases, neither do semicolons in Javascript! And yet ESLint gets so mad about these minute details that just do not matter, from a certain point of view. So why do I say that coding standards like ESLint are important, and why do I enjoy it?</p>
+
+<p>One word: Readability.</p>
+
+<h2 id="the-importance-of-spacing-and-readability">The Importance of Spacing and Readability</h2>
+
+<p>I am not a person who is good with large blocks of text, especially with textbooks. There’s simply too much in one place! Readability is very important to me and I would enjoy learning something so much more if the content was easy to read. Proper spacing, consistent capitalization, and fitting punctuation!</p>
+
+<p>See, while correcting syntax errors improves the performance of the program, correcting style errors improves the performance of the programmers. Coding languages is already technically a whole new language to learn, why make it harder than it should be? Applying the proper spacing can allow programmers to understand and work with the code faster. Indentation indicates where a block of code belongs and is also a good way of demarcating sections of code down to their components.</p>
+
+<p>In fact, I think indentation teaches learners of code what is essentially the crux of programming: Breaking the problem down into smaller problems. Take, for example, this very simple function that converts temperatures:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">temperatureConverter</span><span class="p">(</span><span class="nx">temperature</span><span class="p">,</span> <span class="nx">temperatureType</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">temperatureType</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">F</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">temperature</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">temperatureType</span> <span class="o">==</span> <span class="dl">"</span><span class="s2">C</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">temperature</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">32</span><span class="p">;</span>
+  <span class="p">}</span> 
+  <span class="k">return</span> <span class="dl">"</span><span class="s2">Illegal temperature type</span><span class="dl">"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We break the problem of “How do we convert from one temperature to another?” down to “How do we convert Fahrenheit to Celsius?” and “How do we convert Celsius to Fahrenheit?” While the first question was looser, the other two questions are more concrete and easier to answer. We have just broken down our one big problem into two smaller problems. The answers are then indicated by the indentation within the if statements; it’s evident which are answers and which answers belong to which question.</p>
+
+<p>This use of negative space is key to understanding the structure of any kind of programming. Instead of searching for brackets that may be 25 lines above the snippet of code you’re interested in, indentation and spacing mark out your position within a program.</p>
+
+<p>There is much more to discuss about ESLint and coding standards playing a role in learning code, but this is just an example that I enjoy the most about what ESLint enforces. What can I say? I’m partial to anything that doesn’t wreck my sanity.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

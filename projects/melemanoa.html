@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Mele Manoa | Isabelle Hu | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/IGraceH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Isabelle Hu | Professional Portfolio">
+    <meta property="og:url" content="https://IGraceH.github.io/projects/melemanoa.html">
+    <meta property="og:title" content="Mele Manoa | Isabelle Hu | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/IGraceH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Mele Manoa | Isabelle Hu | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Isabelle Hu</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Mele Manoa</h1>
+ <p><a href="https://mele-manoa.github.io/">GitHub Page</a></p>
+
+<figure class="figure float-end ps-4">
+  <img width="500px" src="../img/melemanoa/melemanoa-body.png" class="figure-img img-fluid rounded border" />
+</figure>
+
+<p>Mele Manoa is a web application project I worked on for ICS 314, Software Engineering I. The web application was created to aid musicians of the University of Hawai’i to be able to easily find one another and meet up for jam sessions, find new members for bands, or just make new friends.</p>
+
+<p>I worked on this project with <a href="https://github.com/YeeunS">Yeeun Shin</a>, <a href="https://github.com/kendalo-tech">Kendal Oya</a>, and <a href="https://github.com/tevin-takata">Tevin Takata</a> through a four-week period. I took on the role of project manager and UI designer. To speed up the process, we used the <a href="https://github.com/ics-software-engineering/meteor-application-template-react">meteor-application-template-react</a> as the basis for our project. Using what we learned in ICS 314 as well, we used React Bootstrap to style and build our web application, MongoDB to hold our data, and Meteor to run the application. It was then deployed using Digital Ocean.</p>
+
+<p>Mele Manoa included a profile page, a discover page, and a groups page. The Discover and Groups pages allow musicians to find other musicians or musical groups of similar interests and musical tastes. The pages display all users registered to Mele Manoa and a sidebar allows the user to filter through which instrument, genre, or skill level they are looking for in a fellow musician.</p>
+
+<p>My favorite part about Mele Manoa is that sidebar in the Discover and Groups pages. Ignoring the few hours that took me to create the interface that I wanted, it was a fun and interesting learning experience. React Bootstrap features a preset list group, accordions, and toggleable buttons. I used all three to create the accordion sidebar, and used the <code class="language-plaintext highlighter-rouge">active</code> class from toggleable buttons to indicate each list item’s state. Toggling the active state was also a problem of its own. Finally, after it was finished, Kendal hooked it up to the filtering system where it became fully functional.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h4&gt;Filter By&lt;/h4&gt;
+&lt;ListGroup&gt;
+  &lt;ListGroup.Item className="p-0"&gt;
+    &lt;Accordion defaultActiveKey="0" flush&gt;
+      &lt;Accordion.Item eventKey="0"&gt;
+        &lt;Accordion.Header&gt;Genres&lt;/Accordion.Header&gt;
+        &lt;Accordion.Body className="p-0"&gt;
+          &lt;ListGroup id="genre-group" variant="flush"&gt;
+            {genres.map((genre, key) =&gt; (
+              &lt;ListGroup.Item
+                action
+                key={key}
+                className="active"
+                onClick={() =&gt; { changeGenreState(key); }}
+              &gt;
+                {genre}
+              &lt;/ListGroup.Item&gt;
+            ))}
+          &lt;/ListGroup&gt;
+        &lt;/Accordion.Body&gt;
+      &lt;/Accordion.Item&gt;
+      &lt;Accordion.Item eventKey="1"&gt;
+        &lt;Accordion.Header&gt;Skill Level&lt;/Accordion.Header&gt;
+        &lt;Accordion.Body className="p-0"&gt;
+          &lt;ListGroup id="skill-group" variant="flush"&gt;
+            {skill.map((level, key) =&gt; (
+              &lt;ListGroup.Item
+                action
+                key={key}
+                className="active"
+                onClick={() =&gt; { changeSkillState(key); }}
+              &gt;
+                {level}
+              &lt;/ListGroup.Item&gt;
+            ))}
+          &lt;/ListGroup&gt;
+        &lt;/Accordion.Body&gt;
+      &lt;/Accordion.Item&gt;
+    &lt;/Accordion&gt;
+  &lt;/ListGroup.Item&gt;
+  &lt;ListGroup.Item
+    id="seeking-item"
+    action
+    className="active"
+    onClick={() =&gt; { changeSeekingState(); }}
+  &gt;
+    Seeking Band Member
+  &lt;/ListGroup.Item&gt;
+&lt;/ListGroup&gt;
+</code></pre></div></div>
+
+<p>Through this project, I have learned much about how to use React Bootstrap when developing web applications. The project also allowed me to utilize Github more and practice working with a team of people. Towards the end, I also experienced working on a time crunch, as homework and projects from other classes increased in difficulty. Fortunately, I had my team members to rely on to accomplish tasks I could not. One of the ‘rules’ that we agreed on was to let other teammates know when we had trouble with a task that we were assigned. Throughout development, no one was afraid to admit they were having trouble with the task they were working on. Personally, I believe this is an important quality to have within a development team or any team in general. Developing a web application, working with frameworks, and creating a product with a team have all been valuable experiences for me for the future.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
