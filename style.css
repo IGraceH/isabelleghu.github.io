@@ -12,9 +12,21 @@ body {
     text-align: center;
 }
 
+#image-placeholder {
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#about {
+    width: 400px;
+    text-align: left;
+}
+
 #desc {
     background-color: white;
     margin: 40px;
     padding: 20px;
-    height: 500px;
+    height: 800px;
 }
