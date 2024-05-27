@@ -17,6 +17,12 @@ body {
     text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+    #banner {
+        background-size: 900px auto;
+    }
+}
+
 #banner-content {
     margin-top: 10px;
 }
@@ -66,29 +72,39 @@ body {
 }
 
 #sample-gallery {
-    position: relative;
-    height: 500px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-top: -40px;
 }
 
 .sample-img {
     max-width: 400px;
     max-height: 400px;
-    position: absolute;
-    transition: all 0.5s;
+    transition: transform 0.5s, margin 0.5s;
+}
+
+@media only screen and (max-width: 992px) {
+    #sample-gallery {
+        margin-top: 0px;
+    }
+
+    .sample-img {
+        max-width: calc(40vw);
+        max-height: calc(40vw);
+    }
 }
 
 .sample-img:hover {
-    max-width: 410px;
-    max-height: 410px;
+    transform: scale(1.025, 1.025);
     margin: -5px auto auto -5px;
 }
-
+/*
 .islands {
     left: 350px;
     top: -50px;
     /* height: 250px; */
 
-}
+/*
 
 .wings {
 
@@ -97,4 +113,4 @@ body {
 .e-o {
     left: 350px;
     top: 235px;
-}
+} */
