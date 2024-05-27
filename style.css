@@ -12,6 +12,24 @@ body {
     overflow-x: hidden;
 }
 
+.btn {
+    border: 1px var(--main-color) solid;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #f1ecf1;
+    color: var(--main-color);
+    border: 1px var(--main-color) solid;
+}
+
+.no-point:hover {
+    cursor: default !important;
+    border: 1px var(--main-color) solid;
+    background-color: white;
+}
+
 #banner {
     background-color: var(--bg-color);
     background-image: url(images/header_image.png);
@@ -31,6 +49,10 @@ body {
 
 #banner-content {
     margin-top: 10px;
+}
+
+#banner-content .btn {
+    font-size: 13px;
 }
 
 #image {
@@ -67,13 +89,8 @@ body {
     border-radius: 5px;
     transition: all 0.2s;
 }
-
-.btn {
-    border: none;
-    transition: all 0.2s;
-}
-
-.nav-link:hover, .btn:hover {
+ 
+.nav-link:hover {
     background-color: #f1ecf1;
     color: var(--main-color);
     border: none;
@@ -110,19 +127,3 @@ body {
     transform: scale(1.025, 1.025);
     margin: -5px auto auto -5px;
 }
-/*
-.islands {
-    left: 350px;
-    top: -50px;
-    /* height: 250px; */
-
-/*
-
-.wings {
-
-}
-
-.e-o {
-    left: 350px;
-    top: 235px;
-} */
