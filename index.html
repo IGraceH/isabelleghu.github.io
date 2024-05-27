@@ -6,6 +6,7 @@
     <title>Isabelle Grace Hu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body class="container-fluid">
     
@@ -31,10 +32,10 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Software Development</a>
+                    <a class="nav-link" href="#s-d">Software Development</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Digital Illustration</a>
+                    <a class="nav-link" href="#d-i">Digital Illustration</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="resume.html">Resume</a>
@@ -44,8 +45,27 @@
       </nav>
 
     <div id="content" class="container">
-        <h1>Software Development</h1>
-        <h1>Digital Illustration</h1>
+        <h2 id="s-d">Software Development</h2>
+        
+
+        <h2 id="d-i">Digital Illustration</h2>
+        <div class="row gx-5">
+            <div class="col-lg-5 col-12">
+                <p>
+                    I have been practicing digital illustration since 2018. My main drawing applications are 
+                    Procreate and Clip Studio Paint. I am most inspired by fantasy stories and concepts that
+                    I enjoy incorporating into my art.
+                </p>
+                <a href="art-portfolio.html" type="button" class="btn btn-light">See the full gallery here <i class="bi-arrow-right"></i></a>
+            </div>
+            <div id="sample-gallery-container" class="col-lg-7 col-12 mt-lg-0 mt-5">
+                <div id="sample-gallery">
+                    <img class="sample-img islands" src="images/islands.png">
+                    <img class="sample-img wings" src="images/wings.png">
+                    <img class="sample-img e-o" src="images/empty_ocean.png">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
