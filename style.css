@@ -159,3 +159,13 @@ body {
     max-width: inherit;
     margin: 5px;
 }
+
+#footer {
+    background-color: var(--main-color);
+    height: 200px;
+    color: var(--bg-color);
+}
+
+#footer a {
+    color: var(--bg-color);
+}
